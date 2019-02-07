@@ -27,3 +27,6 @@ Route::post('/', function(){
 
     return redirect('/');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
